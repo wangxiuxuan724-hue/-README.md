@@ -1,2 +1,12 @@
-# -README.md
-    Video Review Uploader
+# Video Review Uploader
+
+手机优先的视频选择与预览网站。
+
+## 当前版本
+- iPhone / Android 选择视频
+- MP4 / MOV 本地预览
+- 显示文件名和大小
+- 移动端响应式界面
+- 已预留云存储上传入口
+
+> 当前“生成分享链接”是占位功能。要让视频真正上传并生成可供 ChatGPT 访问的链接，还需要接入对象存储。

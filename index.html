@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0c">
+<title>视频上传 · Review</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <section class="hero">
+    <span class="eyebrow">VIDEO REVIEW</span>
+    <h1>把视频发给我看</h1>
+    <p>选择粗剪、成片或素材。先预览，确认后再上传分享。</p>
+  </section>
+
+  <label class="drop" id="drop">
+    <input id="file" type="file" accept="video/*,.mov" hidden>
+    <div class="icon">＋</div>
+    <strong>选择视频</strong>
+    <span>支持 MP4 / MOV · 手机相册可直接选择</span>
+  </label>
+
+  <section id="panel" class="panel hidden">
+    <video id="preview" controls playsinline></video>
+    <div class="meta">
+      <div><b id="name"></b><span id="info"></span></div>
+      <button id="change">换一个</button>
+    </div>
+    <button class="primary" id="upload">生成分享链接</button>
+    <p class="hint" id="status">视频只在你的设备上预览，尚未上传。</p>
+  </section>
+
+  <section class="how">
+    <h2>怎么用</h2>
+    <p><b>01</b> 选择视频　→　<b>02</b> 确认预览　→　<b>03</b> 生成链接发到 ChatGPT</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
